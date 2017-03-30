@@ -1,0 +1,75 @@
+@import "mango-trick"
+
+*,
+*::after,
+*::before
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html
+  font-size: 10px
+
+body
+  font-size: 1.4rem
+a
+  text-decoration: none
+  color: #000
+img
+  width: 100%
+
+// Button 수정 예정
+$btn-bg-none: none !default
+button
+  border: none
+  padding: 1rem 1.5rem
+  background: $btn-bg-none
+.main
+  background: #eee url('https://images3.alphacoders.com/151/151409.jpg') center center no-repeat
+  background-size: cover
+  height: 80vh
+  display: flex
+  align-items: center
+.main-search
+  width: 100%
+  padding: 0 2rem 5rem 2rem
+  & h2,
+  & p
+    color: $white
+    text-align: center
+    margin-bottom: 1.5rem
+  & h2
+    font-size: $size-1
+  & p
+    font-size: $size-4
+.performance-list
+  border-bottom: 1px solid #ddd
+  // Button 수정 예정
+  & button
+    border: 1px solid #ddd
+    background: none
+    padding: 1.8rem 5rem
+    margin: 2rem auto 4rem auto
+    font-size: $size-6
+    cursor: pointer
+  & button:hover
+    color: $red
+.performance-list h2,
+.genre-list h2
+    font-size: $size-3
+    text-align: center
+    margin: 4rem auto
+    color: $text
+.card,
+.card-side
+  text-align: left
+  margin-bottom: 2rem
+// Desktop +
+@media screen and (min-width: $tablet + 1)
+  .performance-list,
+  .genre-list
+    padding: 1rem
+// Mobile, Tablet
+@media screen and (min-width: $mobile + 1) and (max-width: $tablet)
+  .performance-list
+    padding: 1rem

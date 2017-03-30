@@ -1,0 +1,21 @@
+//// @author Jihyun Lee
+
+/// set-footer
+/// @param {string} $display [left] - insert alignment for footer content
+=set-footer($display: left)
+    border-top: 1px solid #d8d4d6
+    background: #f3eff1
+    display: flex
+    @if $display == center
+        justify-content : center
+    @else if $display == right
+        justify-content : flex-end
+    @else
+        justify-content : flex-start
+
+.footer
+    +set-footer
+.footer-center
+    +set-footer(center)
+.footer-right
+    +set-footer(right)
