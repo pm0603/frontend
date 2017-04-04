@@ -44,6 +44,7 @@ button
     font-size: $size-4
 .performance-list
   border-bottom: 1px solid #ddd
+  padding: 1rem
   // Button 수정 예정
   & button
     border: 1px solid #ddd
@@ -64,12 +65,30 @@ button
 .card-side
   text-align: left
   margin-bottom: 2rem
+
+// Mobile, Tablet
++breakpoint(tablet)
+  .genre-list-padding
+    padding: 0
+
 // Desktop +
-@media screen and (min-width: $tablet + 1)
-  .performance-list,
++breakpoint(desktop)
   .genre-list
     padding: 1rem
-// Mobile, Tablet
-@media screen and (min-width: $mobile + 1) and (max-width: $tablet)
-  .performance-list
-    padding: 1rem
+
+.search-main
+  padding: 2rem
+  width: 100%
+  & .searchbar
+    width: 100%
+    max-width: 100%
+
+.search
+  display: flex
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1)
+  margin-top: 2rem
+  &-category
+    width: 100%
+    text-align: center
+  & a
+    display: block

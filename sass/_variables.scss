@@ -131,3 +131,14 @@ dark: ($black-md, $dark-invert),
 black: ($black, $black-invert),
 light: ($white-md, $light-invert)
 );
+
+// grid variables
+$grid-columns: 12;
+$mobile: 480px;
+$tablet: 780px;
+$desktop: 1200px;
+
+$width: 100%;
+$desktop-gutter: 1rem;
+$tablet-gutter: 1rem;
+$mobile-gutter: 0;

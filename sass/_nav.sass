@@ -70,19 +70,6 @@ header
       background: #fff
       right: 0
       top: 0
-      & li
-
-    & .nav-location,
-      height: $nav-height
-      position: relative
-      width: 50%
-    & .nav-location-all
-      display: block
-      padding: 1.8rem 8rem
-    & .nav-location-all::after
-      content: '▾'
-      padding-left: 1rem
-      position: absolute
     & > ul > li > a
       display: inline-block
       padding: 1.8rem
@@ -99,6 +86,20 @@ header
       & a
         padding: 1.8rem
         display: block
+  .nav-location,
+  .search-category
+    height: $nav-height
+    position: relative
+    width: 50%
+  .nav-location-all,
+  .category-all
+    display: block
+    padding: 1.8rem 8rem
+  .nav-location-all::after,
+  .category-all::after
+    content: '▾'
+    padding-left: 1rem
+    position: absolute
 
 @media screen and (min-width: 901px)
   .nav
@@ -124,18 +125,6 @@ header
       font-size: 1.4rem
       height: $nav-height
       text-transform: uppercase
-    &-left .nav-location
-      height: $nav-height
-      position: relative
-      border-right: 1px solid #ccc
-      border-left: 1px solid #ccc
-    &-left .nav-location-all
-      display: block
-      padding: 1.8rem 8rem
-    &-left .nav-location-all::after
-      content: '▾'
-      padding-left: 1rem
-      position: absolute
     &-left > ul > li > a
       display: inline-block
       padding: 1.8rem
@@ -152,3 +141,18 @@ header
       & a
         padding: 1.8rem
         display: block
+  .nav-location,
+  .search-category
+    height: $nav-height
+    position: relative
+    border-right: 1px solid #ccc
+    border-left: 1px solid #ccc
+  .nav-location-all,
+  .category-all
+    display: block
+    padding: 1.8rem 8rem
+  .nav-location-all::after,
+  .category-all::after
+    content: '▾'
+    padding-left: 1rem
+    position: absolute
